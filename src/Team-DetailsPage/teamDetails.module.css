@@ -1,0 +1,240 @@
+.teamDetails {
+    overflow-x: hidden;
+}
+
+.teamHeader {
+    position: relative;
+    width: 97%;
+    height: 200px; 
+    background-image: url('../../public/breadcrumb__bg.jpg') ;
+    margin-left: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 51, 0.8); 
+    display: flex;
+    flex-direction: column;
+    
+    color: white;
+    
+}
+
+
+.overlay h1{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    margin-top: 60px;
+    margin-left: 20px;
+}
+
+.overlay p{
+    font-size: 1rem;
+    color: #cccccc;
+    text-align: start;
+    margin-left: 20px;
+}
+
+.footer {
+    background-color: #0a0a23;
+    color: white;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
+  
+.footerContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+  
+.footerSection {
+    flex: 1 1 200px;
+    margin: 10px;
+}
+  
+.footerLogo {
+    font-size: 24px;
+    font-weight: bold;
+    color:rgb(235, 235, 235);
+    margin-left: -100px;
+}
+  
+.footerLogoContent {
+    display: flex;
+    flex-direction: row;
+}
+
+.footerSection ul {
+    list-style: none;
+    padding: 0;
+}
+  
+.footerSection ul li {
+    margin: 8px 0;
+}
+  
+.instagramGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+  
+.instagramGrid img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+  
+.footerBottom {
+    margin-top: 20px;
+    border-top: 1px solid #444;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.socialIcons {
+    display: flex;
+    flex-direction: row;
+}
+.socialIcons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+  
+
+.iconsInstagram {
+    color: #555;
+    margin-left: 9px;
+    margin-top: 7px;
+}
+
+.icons {
+    color: #555;
+    margin-left: 6px;
+    margin-top: 7px;
+}
+
+.iconsContact {
+    color: #fdfdfd;
+    margin-left: 9px;
+    margin-top: 8px;
+    width: 22px;
+    height: 22px;
+}
+
+.iconHolder {
+    width: 34px;
+    height: 34px;
+    border-radius: 6px;
+    background-color: #f3eeee;
+    object-fit: contain;
+}
+
+.iconHolder:hover {
+    background-color: #c0c0c0;
+    transform: scale(0.90);
+}
+
+
+.iconsContact{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 65px;
+} 
+
+.contactIcons {
+    margin-right: 9px;
+    margin-top: 14px;
+    width: 22px;
+    height: 22px;
+}
+
+.locationPgph {
+    margin-right: 9px;
+    margin-top: 14px;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 95px;
+}
+
+.numberPgph {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+} 
+
+/*Media Breakpoints*/
+/* Tablets */
+@media (max-width: 992px) { 
+    .teamHeader {
+        height: 180px;
+    }
+    .overlay h1 {
+        font-size: 1.8rem;
+        margin-top: 40px;
+    }
+    .overlay p {
+        font-size: 0.95rem;
+    }
+}
+
+/* Mobile Large */
+@media (max-width: 768px) { 
+    .teamHeader {
+        height: 160px;
+    }
+    .overlay h1 {
+        font-size: 1.6rem;
+        margin-top: 30px;
+    }
+    .overlay p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Mobile Medium */
+@media (max-width: 576px) { 
+    .teamHeader {
+        height: 140px;
+    }
+    .overlay h1 {
+        font-size: 1.4rem;
+        margin-top: 20px;
+    }
+    .overlay p {
+        font-size: 0.85rem;
+    }
+}
+
+/* Mobile Small */
+@media (max-width: 400px) { 
+    .teamHeader {
+        height: 120px;
+    }
+    .overlay h1 {
+        font-size: 1.2rem;
+        margin-top: 15px;
+    }
+    .overlay p {
+        font-size: 0.8rem;
+    }
+}
+

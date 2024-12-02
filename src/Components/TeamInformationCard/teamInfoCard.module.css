@@ -1,0 +1,418 @@
+
+
+
+
+
+/* General Styles */
+.teamInfoCard {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /*border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);*/
+    margin: 0 auto;
+    width: 100%;
+    max-width: 900px;
+    margin: 20px auto;
+    overflow: hidden;
+    padding: 120px 120px;
+}
+
+
+  
+.topSection {
+    display: flex;
+    gap: 20px;
+}
+  
+.profileImage img {
+    width: 360px;
+    height: 480px;
+    object-fit: cover;
+
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.281);
+    
+}
+
+
+.aboutSection {
+    flex: 1;
+    margin-left: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.199);
+    padding: 2em;
+    width: 50px;;
+}
+  
+.name {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: -8px;
+}
+  
+.role {
+    font-size: 16px;
+    color: #666;
+}
+  
+.socialLinks {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+  
+.socialLinks a {
+    font-size: 20px;
+    color: #007bff;
+    transition: color 0.3s;
+}
+  
+.socialLinks a:hover {
+    color: #0056b3;
+  }
+  
+.aboutDescription,
+.contactInfo {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #555;
+}
+  
+.secondAboutParagraph {
+    margin-top: 15px;
+    color: #555;
+    color: #555;
+}
+
+.iconsInstagram {
+    color: #555;
+    margin-left: 9px;
+    margin-top: 7px;
+}
+
+.icons {
+    color: #555;
+    margin-left: 6px;
+    margin-top: 7px;
+}
+
+.iconsContact {
+    color: #fdfdfd;
+    margin-left: 9px;
+    margin-top: 8px;
+    width: 22px;
+    height: 22px;
+}
+
+.iconHolder {
+    width: 34px;
+    height: 34px;
+    border-radius: 6px;
+    background-color: #f3eeee;
+    object-fit: contain;
+}
+
+.iconHolder:hover {
+    background-color: #c0c0c0;
+    transform: scale(0.90);
+}
+
+
+
+.iconHolderContact {
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+    background-color: #0066ff;
+    margin-top: 15px;
+    margin-right: 10px;
+    object-fit: contain;
+
+}
+
+.iconHolderContactEmail {
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+    background-color: #0066ff;
+    margin-top: 15px;
+    margin-right: 10px;
+    margin-left: 24px;
+    object-fit: contain;
+}
+
+
+.infoItem {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.infoItemRow {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+}
+
+/*Skills Section*/
+.skillsSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.199);
+}
+  
+.textSection {
+    flex: 1;
+    max-width: 50%;
+    padding-right: 20px;
+}
+  
+.sectionTitle {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 10px;
+}
+.skillsDescription {
+    font-size: 16px;
+    color: #555;
+}
+  
+.skillsBar {
+    flex: 1;
+    max-width: 50%;
+}
+  
+.skill {
+    margin-bottom: 20px;
+}
+  
+.skillInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+  
+.skillBar {
+    background-color: #eee;
+    border-radius: 4px;
+    height: 8px;
+    position: relative;
+    overflow: hidden;
+}
+  
+.progressBar {
+    height: 100%;
+    background-color: #0066ff;
+    border-radius: 4px;
+}
+  
+.percentage {
+    font-size: 14px;
+    font-weight: bold;
+    color: #0066ff;
+}
+  
+  /*Contact Section*/
+.contactSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.281);
+    margin-top: 30px;
+}
+  
+.contactMeSection {
+    flex: 1;
+    max-width: 50%;
+    padding-right: 20px;
+}
+  
+.sectionTitle {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 10px;
+}
+  
+.contactDescription {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+  
+.formContent {
+    flex: 1;
+    max-width: 50%;
+}
+  
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+  
+.row {
+    display: flex;
+    gap: 10px;
+}
+  
+.inputField {
+    flex: 1;
+    padding: 12px 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: rgba(172, 172, 172, 0.151);
+}
+  
+.textareaField {
+    width: 100%;
+    padding: 5px 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: rgba(172, 172, 172, 0.151);
+
+}
+  
+.submitButton {
+    background-color: #0066ff;
+    color: #fff;
+    border: none;
+    padding: 12px 16px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+  
+.submitButton:hover {
+    background-color: #0052cc;
+}
+
+
+/*Media Breakpoints*/
+/* General */
+@media (max-width: 1200px) {
+  .teamInfoCard {
+    padding: 60px 60px;
+  }
+  .skillsSection, .contactSection {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+  }
+  .skillsBar, .textSection, .formContent, .contactMeSection {
+    max-width: 100%;
+    padding: 0;
+  }
+}
+
+
+/* Tablets */
+@media (max-width: 992px) { 
+  .topSection {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  .aboutSection {
+    padding: 1.5em;
+    width: 100%;
+  }
+  .profileImage img {
+    width: 300px;
+    height: 400px;
+  }
+  .teamInfoCard {
+    padding: 40px 40px;
+  }
+}
+
+/*Mobile Views*/
+/* Mobile Large */
+@media (max-width: 768px) {
+  .topSection {
+    flex-direction: column;
+    align-items: center;
+  }
+  .skillsSection {
+    padding: 30px 15px;
+  }
+  .contactSection {
+    padding: 30px 15px;
+  }
+  .profileImage img {
+    width: 250px;
+    height: 350px;
+  }
+  .teamInfoCard {
+    padding: 30px 20px;
+  }
+}
+
+/* Mobile Medium */
+@media (max-width: 576px) { 
+  .topSection {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .skillsSection, .contactSection {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .profileImage img {
+    width: 200px;
+    height: 300px;
+  }
+  .skillsBar, .formContent, .contactMeSection {
+    max-width: 100%;
+  }
+}
+
+/* Mobile Small */
+@media (max-width: 400px) { 
+  .teamInfoCard {
+    padding: 20px 15px;
+  }
+  .sectionTitle {
+    font-size: 20px;
+  }
+  .role {
+    font-size: 14px;
+  }
+  .aboutSection, .skillsBar, .formContent {
+    padding: 10px;
+  }
+  .profileImage img {
+    width: 180px;
+    height: 250px;
+  }
+  .inputField, .textareaField {
+    font-size: 12px;
+  }
+  .submitButton {
+    padding: 10px 14px;
+    font-size: 14px;
+  }
+}
+
