@@ -1,0 +1,85 @@
+.cardText {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    gap: 20px;
+  }
+
+  .cardText:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .iconContainer {
+    background-color: #e7f3ff;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    display: inline-block;
+    margin-bottom: 15px;
+  }
+
+  .iconContainer:hover {
+    transform: translateY(-10px);
+  }
+
+  .iconContainer h3 {
+    font-size: 1.25rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  .iconContainer p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .icon {
+    font-size: 2.5rem;
+    color: #4a90e2;
+    margin-bottom: 15px;
+  }
+  
+  .title {
+    font-size: 1.25rem;
+    color: #001848;
+    margin-bottom: 10px;
+  }
+  
+  .description {
+    font-size: 0.9rem;
+    color: #6b6b6b;
+    margin-bottom: 20px;
+  }
+  
+  .text {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 20px;
+  }
+
+  .button {
+    background-color: #fff;
+    color: #4a90e2;
+    display: table-column-group;
+    gap: 100px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #357ab8;
+    color: #fff;
+  }
