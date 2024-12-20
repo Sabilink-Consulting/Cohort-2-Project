@@ -17,7 +17,6 @@ body {
   .servicesHeader {
     width: 100%;
     font-family: "Roboto", sans-serif;
-    background: linear-gradient(to right, #02275e, #023070af), url('../../public/breadcrumb__bg.jpg')  no-repeat center center/cover;
     color: white;
     text-align: center;
   }
@@ -60,6 +59,7 @@ body {
   }
   
   .headerMain {
+    background: linear-gradient(to right, #02275e, #023070af), url('../../public/breadcrumb__bg.jpg')  no-repeat center center/cover;
     background-size: cover;
     background-position: center;
     text-align: center;
