@@ -3,64 +3,29 @@ import styles from "./ServicesPage.module.css";
 import CardContainers from "../components/CardContainers";
 import "@fortawesome/react-fontawesome";
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import { faChartLine, faEnvelope, faFileAlt, faLightbulb, faBullseye, faCalculator } from "@fortawesome/free-solid-svg-icons";
+
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"></link>
 
  
-    const services = [
-        {
-            id: 1,
-            icon: faChartLine,
-            title: "Market Research",
-            text: "Transform your business with innovative strategies.",
-        },
-        {
-            id: 2,
-            icon: faEnvelope,
-            title: "E-mail Marketing",
-            text: "Reach your customers effectively with email marketing.",
-        },
-        {
-            id: 3,
-            icon: faFileAlt,
-            title: "Reports Analysis",
-            text: "Analyze and grow with data-driven insights.",
-        },
-        {
-            id: 4,
-            icon: faLightbulb,
-            title: "Innovation Idea",
-            text: "Bring your ideas to life with innovation",
-        },
-        { 
-            id: 5,
-            icon: faBullseye,
-            title: "Strategic Planning",
-            text: "Plan for success with expert strategies.",
-        },
-        {
-            id: 6,
-            icon: faCalculator,
-            title: "Tax Advisory",
-            text: "Navigate tax laws with professional advice.",
-        }
-    ];
+    
 
-function ServicesPage()  {
+function ServicesPage({ data, pageData })  {
+  console.log(data, pageData)
+
     return (
       <div className={styles.page}>
         <header className={styles.servicesHeader}>
          <div className={styles.headerTopBar}>
           <div className={styles.contactInfo}>
             <p>
-              <i className="fa-solid fa-location-dot"></i> 256 Avenue, Mark Street,
-              New York City  
+              <i className="fa-solid fa-location-dot"></i> 256 Avenue, 
             </p>
             <p><span> | </span></p>
             <p>
               <i className="fa-solid fa-envelope"></i> info@gmail.com
             </p>
           </div>
+
           <div className={styles.headerLinks}>
             <p>
               <i className="fa-solid fa-phone"></i> +123 4884 4889
@@ -121,7 +86,7 @@ function ServicesPage()  {
 
        <section className={styles.servicesSection}>
        <div className={styles.servicesContainers}>
-         {services.map((service, index) => (
+         {data.map((service, index) => (
           <CardContainers
             key={service.id}
             icon={service.icon}
@@ -138,7 +103,7 @@ function ServicesPage()  {
          
           <div className={styles.footerSection}>
           <img src="/logo.svg" alt="Beeko Logo" className={styles.logo} />
-            <p>Sydney Harbour Circular City of Sydney, Australia.</p>
+            <p>{pageData.title}</p>
             <p>+123 888 9999</p>
             <p>info@beeko.com</p>
           </div>

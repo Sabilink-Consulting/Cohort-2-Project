@@ -28,9 +28,8 @@ library.add(
  const CardContainers = ({ icon, title, text}) => {
     return( 
         <div ClassName={styles.cardText}>
-         <div className={styles.iconContainer}>
+
           <FontAwesomeIcon icon={icon} alt={title} className={styles.icon} size="2x" />
-         </div> 
           <h3 className={styles.title}>{title}</h3>
           <p ClassName={styles.text}>{text}</p>  
           <button className={styles.button}>Read More →</button>
